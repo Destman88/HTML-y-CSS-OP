@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container button {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 50px;
+  width: 200px;
+}
+
+.container button::before {
+  content: "Pasa por encima";
+}
+
+.container button:hover::before {
+  display: none;
+}
+
+.container button::after {
+  content: " ¡Hecho!";
+  display: none;
+}
+
+.container button:hover::after {
+  background-color: green;
+  color: white;
+  display: inline;
+}
