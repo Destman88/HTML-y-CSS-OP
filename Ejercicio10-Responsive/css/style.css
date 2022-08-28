@@ -1,0 +1,57 @@
+:root {
+  --gradiente: linear-gradient(
+    to bottom right,
+    hsl(320, 2.04%, 28.82%) 0%,
+    hsl(320, 2.04%, 28.08%) 8.3%,
+    hsl(320, 2.04%, 27.18%) 16%,
+    hsl(320, 2.04%, 26.13%) 23.2%,
+    hsl(320, 2.04%, 24.95%) 29.9%,
+    hsl(320, 2.04%, 23.63%) 36.4%,
+    hsl(320, 2.04%, 22.17%) 42.5%,
+    hsl(320, 2.04%, 20.6%) 48.5%,
+    hsl(320, 2.04%, 18.89%) 54.4%,
+    hsl(320, 2.04%, 17.07%) 60.3%,
+    hsl(320, 2.04%, 15.11%) 66.3%,
+    hsl(320, 2.04%, 13.02%) 72.4%,
+    hsl(320, 2.04%, 10.77%) 78.8%,
+    hsl(320, 2.04%, 8.31%) 85.4%,
+    hsl(320, 2.04%, 5.47%) 92.5%,
+    hsl(0, 0%, 0%) 100%
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  font-size: 2rem;
+}
+
+.sidebar {
+  background: var(--gradiente);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+div.main {
+  padding: 10px;
+  flex-grow: 1;
+}
+
+@media (max-width: 640px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  div.sidebar {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
