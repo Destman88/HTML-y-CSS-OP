@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Elementos de Interés en Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container py-4">
+        <!-- Bloque Jumbotron -->
+        <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+                <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one
+                    in previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it
+                    to your liking.</p>
+                <!-- Button modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Desplegar Modal
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Título Modal</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Cuerpo del Modal
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal"><i
+                                        class="bi bi-x-circle-fill me-1"></i>Cerrar</button>
+                                <button type="button" class="btn btn-success">
+                                    <i class="bi bi-check-circle-fill me-1"></i>Guardar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bloque Formulario -->
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre">
+            </div>
+            <div class="col-md-6">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="number" class="form-control" id="telefono">
+            </div>
+            <div class="col-12">
+                <label for="textarea" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="textarea" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+            </div>
+        </form>
+        <!-- Bloque Card -->
+        <div class="card my-3">
+            <div class="row g-0">
+                <div class="col-lg-4">
+                    <img src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHByb2dyYW1hY2lvbnxlbnwwfHwwfHw%3D&w=1000&q=80"
+                        class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-lg-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Derick Maitland Nieto</h5>
+                        <p class="card-text">Hace 2 dos años finalmente descubrí lo que realmente me apasiona, programar
+                            🤩👨‍💻 Desde ese momento he emprendido un viaje por este mundo maravilloso donde siempre
+                            hay algo nuevo que aprender. En este momento continuo mejorando mis habilidades en
+                            programación con Open BootCamp.</p>
+                        <p class="card-text"><small class="text-muted">derickmaitland@gmail.com</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
